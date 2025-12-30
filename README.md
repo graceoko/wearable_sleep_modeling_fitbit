@@ -3,7 +3,7 @@
 ## Overview
 This project explores how daily activity patterns captured by consumer wearables can be used to predict sleep duration and classify sleep quality. Using Fitbit activity and sleep data, I developed and evaluated machine learning models to understand which behavioral factors most strongly influence sleep outcomes and how those insights could translate into practical, user-facing guidance.
 
-Rather than treating sleep prediction as a purely technical task, this project emphasizes interpretability, validation, and real-world relevance—examining how simple daily behaviors relate to meaningful health outcomes and how wearable data can support scalable sleep monitoring. :contentReference[oaicite:2]{index=2}
+Rather than treating sleep prediction as a purely technical task, this project emphasizes interpretability, validation, and real-world relevance—examining how simple daily behaviors relate to meaningful health outcomes and how wearable data can support scalable sleep monitoring.
 
 ---
 
@@ -15,7 +15,7 @@ Key data sources:
 - **Minute-level sleep data:** asleep, restless, and awake labels
 - **Derived daily sleep summaries:** total minutes asleep, time in bed, and awake time
 
-Minute-level sleep records were aggregated into daily summaries and merged with daily activity data by participant ID and date, producing a dataset suitable for both regression and classification tasks. :contentReference[oaicite:3]{index=3}
+Minute-level sleep records were aggregated into daily summaries and merged with daily activity data by participant ID and date, producing a dataset suitable for both regression and classification tasks.
 
 ---
 
@@ -27,7 +27,7 @@ Two prediction tasks were defined:
   - *Good sleep* (≥ 7 hours)
   - *Poor sleep* (< 7 hours)
 
-This framing allowed evaluation of both continuous sleep outcomes and decision-oriented classifications relevant to real-world health applications. :contentReference[oaicite:4]{index=4}
+This framing allowed evaluation of both continuous sleep outcomes and decision-oriented classifications relevant to real-world health applications.
 
 ---
 
@@ -45,7 +45,7 @@ Twelve activity-based predictors were used, including:
 - Distance-based activity measures
 - Total daily calories
 
-Missing activity values were imputed as zeros when no activity was logged. :contentReference[oaicite:5]{index=5}
+Missing activity values were imputed as zeros when no activity was logged.
 
 ---
 
@@ -68,7 +68,7 @@ Models were ranked using a weighted score combining test accuracy, F1-score, and
 - Random Forest Regressor
 - Gradient Boosting Regressor
 
-Performance was evaluated using R² and mean absolute error (MAE). :contentReference[oaicite:6]{index=6}
+Performance was evaluated using R² and mean absolute error (MAE).
 
 ---
 
@@ -84,7 +84,7 @@ Performance was evaluated using R² and mean absolute error (MAE). :contentRefer
 - Accounted for ~68% of feature importance in regression
 - Showed a strong negative correlation with sleep duration (r = −0.58)
 
-Practically, participants with higher sedentary time slept ~78 minutes less per night, while reducing sedentary behavior by 30–60 minutes per day corresponded to meaningful increases in sleep duration. :contentReference[oaicite:7]{index=7}
+Practically, participants with higher sedentary time slept ~78 minutes less per night, while reducing sedentary behavior by 30–60 minutes per day corresponded to meaningful increases in sleep duration.
 
 ---
 
@@ -94,7 +94,7 @@ These findings suggest that:
 - Reducing sedentary time may have a larger impact on sleep than increasing vigorous exercise
 - Wearable-derived behavioral data can support scalable, low-cost sleep monitoring and guidance
 
-This work demonstrates how machine learning can move beyond prediction toward insight generation that supports real-world behavior change. :contentReference[oaicite:8]{index=8}
+This work demonstrates how machine learning can move beyond prediction toward insight generation that supports real-world behavior change.
 
 ---
 
@@ -119,4 +119,4 @@ This work demonstrates how machine learning can move beyond prediction toward in
 - **Technical Report:** Extended written analysis with detailed methodology and discussion
 - **Presentation:** High-level walkthrough of motivation, approach, and findings
 
-Each artifact targets a different audience, reflecting how analytics and AI work is communicated across technical and non-technical stakeholders. :contentReference[oaicite:9]{index=9}
+Each artifact targets a different audience, reflecting how analytics and AI work is communicated across technical and non-technical stakeholders.
